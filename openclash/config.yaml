@@ -1,7 +1,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: ""
+    url: "订阅链接在这里"
     type: http
     health-check:
       enable: true
@@ -77,27 +77,26 @@ dns:
  
 # 出站
 proxy-groups:
-  - {name: 🚀 手动选择, type: select, proxies: [🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 🌐 全部节点, 直连]}
+  - {name: 🚀 手动选择, type: select, proxies: [🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🌐 全部节点, 直连]}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
-  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
+  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
 
-  - {name: 📹 YouTube, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
-  - {name: 🍀 Google, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
-  - {name: 🤖 ChatGPT, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
-  - {name: 👨🏿‍💻 GitHub, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
-  - {name: 🪟 Microsoft, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
-  - {name: 🐬 OneDrive, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
-  - {name: 🎵 TikTok, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
-  - {name: 📲 Telegram, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
-  - {name: 🎥 NETFLIX, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
-  - {name: 💶 PayPal, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 🇰🇷 韩国, 直连]}
+  - {name: 📹 YouTube, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
+  - {name: 🍀 Google, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
+  - {name: 🤖 ChatGPT, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
+  - {name: 👨🏿‍💻 GitHub, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
+  - {name: 🪟 Microsoft, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
+  - {name: 🐬 OneDrive, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
+  - {name: 🎵 TikTok, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
+  - {name: 📲 Telegram, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
+  - {name: 🎥 NETFLIX, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
+  - {name: 💶 PayPal, type: select, proxies: [🚀 手动选择, ♻️ 自动选择, 🇺🇸 美国, 🇯🇵 日本, 🇭🇰 香港, 🇸🇬 新加坡, 🇹🇼 台湾, 直连]}
 
   - {name: 🇺🇸 美国, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))"}
   - {name: 🇯🇵 日本, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))"}
   - {name: 🇭🇰 香港, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))"}
   - {name: 🇸🇬 新加坡, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新加坡|坡|狮城|SG|Singapore))"}
   - {name: 🇹🇼 台湾, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|TW|(?i)Taiwan))"}
-  - {name: 🇰🇷 韩国, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(韩|KR|(?i)Korea))"}
   - {name: 🌐 全部节点, type: select, include-all: true}
 
 # 规则匹配
